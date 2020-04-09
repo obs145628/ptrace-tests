@@ -1,0 +1,16 @@
+
+# With strace
+
+strace -Tfe trace=read,write ls
+strace -Tfe trace=read,write python test.py
+
+# Wit mystrace
+
+make
+./mystrace ls
+./mystrace python test.py
+
+# Sources
+
+Tutorial Playing with PTrace: https://www.linuxjournal.com/article/6100
+X64 Syscalls Table: https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/
